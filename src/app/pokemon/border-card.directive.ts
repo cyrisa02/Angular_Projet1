@@ -16,8 +16,6 @@ export class BorderCardDirective {
 
   @Input('pkmnBorderCard') borderColor: string;// alias
 
-
-
   @HostListener('mouseenter') onMouseEnter() {
     this.setBorder(this.borderColor || this.defaultColor);
   }
